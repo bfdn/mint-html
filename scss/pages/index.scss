@@ -1,0 +1,701 @@
+.main {
+    margin-top: 5em;
+
+    .start {
+
+
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-direction: column;
+            text-align: center;
+
+            @include mq('tablet') {
+                flex-direction: row;
+                text-align: unset;
+            }
+        }
+
+        &__text {
+            width: 100%;
+        }
+
+        &__title {
+            font-family: $font;
+            font-weight: 800;
+            font-size: 3.75em;
+            color: $color-dark-black;
+        }
+
+        &__desc {
+            width: 100%;
+            margin-top: 2.688em;
+            font-size: .75em;
+            color: $color-black;
+
+            @include mq('tablet') {
+                width: 90%;
+            }
+        }
+
+        &__link {
+            font-size: .93em;
+            margin-top: 2.813em;
+            text-transform: uppercase;
+            width: 180px;
+            height: 60px;
+            font-weight: bold;
+        }
+
+        &__img {
+            margin-top: .625em;
+            flex-shrink: 0;
+
+            @include mq('tablet') {
+                margin-top: 0;
+            }
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    .work {
+        margin-top: 4.88em;
+        padding-left: 5px;
+        padding-right: 5px;
+
+        .container {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__link {
+            width: 200px;
+            height: 50px;
+            margin: 0 auto;
+            margin-top: 4.375em;
+            font-family: $font;
+            font-weight: 500;
+            font-size: 0.750em;
+            text-transform: uppercase;
+        }
+
+        &__section-title {
+            color: $color-dark-black;
+            font-size: 58px;
+            text-transform: uppercase;
+            font-family: $font;
+            font-weight: 800;
+
+        }
+
+        &__category-title {
+            margin-top: 1em;
+
+            @include mq('tablet') {
+                margin-top: 2em;
+            }
+        }
+
+        &__category-box {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+
+            @include mq('tablet') {
+                justify-content: flex-start;
+            }
+
+            &-item {
+
+
+
+                @include mq('tablet') {
+                    margin-right: 30px;
+                }
+
+                &--active {
+                    background-color: $color-yellow;
+                }
+
+
+            }
+        }
+
+        &__category-link {
+            text-transform: uppercase;
+            color: $color-dark-black;
+            font-family: $font;
+            font-size: 12px;
+            font-weight: 500;
+            display: inline-block;
+            padding: 5px 10px;
+
+            &:hover {
+                background-color: $color-yellow;
+            }
+        }
+
+        &__box {
+            margin-top: 3em;
+            height: auto;
+
+            @include mq('tablet') {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: flex-start;
+
+            }
+
+            &-item {
+                position: relative;
+                margin-top: 30px;
+                width: 400px;
+                height: 300px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                text-transform: uppercase;
+                transition: background 1s;
+                border-radius: 5px;
+
+
+                @include mq('tablet') {
+                    width: 31.60%;
+
+                    &:nth-child(2) {
+                        margin-top: 0 !important;
+                    }
+
+                    &:nth-child(1),
+                    &:nth-child(3) {
+                        margin-top: 0;
+                    }
+
+
+                }
+
+                &:nth-child(3n) {
+                    margin-right: 0;
+                }
+
+                img {
+                    z-index: -999;
+                }
+
+
+                &--big {
+                    width: 400px;
+                    height: 500px;
+
+
+                    .work__box-brand {
+                        top: 50%;
+                    }
+
+                    @include mq('tablet') {
+                        width: 31.60%;
+
+                    }
+
+
+
+                }
+
+                &:hover {
+                    background-image: none;
+                    background-color: $color-yellow;
+
+
+                    .work__box-title,
+                    .work__box-brand {
+                        opacity: 1;
+                    }
+                }
+            }
+
+            &-title {
+                font-size: 30px;
+                font-family: $font;
+                font-weight: 800;
+                position: absolute;
+                top: 40%;
+                opacity: 0;
+            }
+
+            &-brand {
+                font-size: 12px;
+                font-family: $font;
+                font-weight: 500;
+                position: absolute;
+                top: 55%;
+                opacity: 0;
+            }
+        }
+
+
+    }
+
+    .brand {
+        margin-top: 180px;
+        margin-bottom: 250px;
+
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            flex-direction: column;
+
+            @include mq('tablet') {
+                flex-direction: row;
+            }
+
+            img {
+                margin-top: 15px;
+                height: 100%;
+
+                @include mq('tablet') {
+                    margin-top: 0;
+                }
+            }
+        }
+
+
+    }
+
+    .about {
+        .container {
+            display: flex;
+            align-items: center;
+            //justify-content: center;
+            flex-direction: column;
+
+            @include mq('tablet') {
+                align-items: flex-start;
+            }
+        }
+
+        &__title {
+            font-size: 58px;
+            font-family: $font;
+            font-weight: 800;
+            text-transform: uppercase;
+        }
+
+        &__desc {
+            width: 50%;
+            margin-top: 40px;
+            margin-bottom: 40px;
+            font-size: 12px;
+            font-family: $font;
+            font-weight: 500;
+            line-height: 2.2;
+        }
+
+        &__team {
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-direction: column;
+
+            @include mq('tablet') {
+                flex-direction: row;
+            }
+
+            &-item {
+                position: relative;
+
+                height: 420px;
+
+                @include mq('tablet') {
+                    margin-right: 30px;
+                }
+
+                &:last-child {
+                    margin-right: 0;
+                }
+
+                img {
+                    z-index: -999;
+                }
+
+                &-title {
+                    font-family: $font;
+                    font-weight: 800;
+                    font-size: 20px;
+                    color: $color-dark-black;
+                }
+
+                p {
+                    margin-top: 45px;
+                    font-size: 12px;
+                    line-height: 2.2;
+                }
+
+                a {
+                    display: inline-block;
+                    margin-top: 50px;
+                }
+
+                &--other {
+                    padding-top: 100px;
+                    padding-left: 50px;
+                    padding-right: 50px;
+                    border: 4px solid #fdfdfd;
+                }
+
+                &+.about__team-item {
+                    margin-top: 30px;
+
+                    @include mq('tablet') {
+                        margin-top: 0;
+                    }
+                }
+            }
+
+            &-info {
+                width: 70%;
+
+                height: 70px;
+                background-color: $color-yellow;
+                padding-left: 28px;
+                padding-top: 10px;
+                padding-bottom: 25px;
+                position: absolute;
+                top: 83%;
+
+                @include mq('tablet') {
+                    //width: 23%;
+                }
+
+
+                h5 {
+                    font-family: $font;
+                    font-weight: 800;
+                    font-size: 15px;
+                    color: $color-dark-black;
+                }
+
+                span {
+                    display: inline-block;
+                    margin-top: 10px;
+                    font-family: $font;
+                    font-weight: 500;
+                    font-size: 12px;
+                    color: #fff;
+                }
+            }
+
+        }
+    }
+
+    .blog {
+        margin-top: 100px;
+
+        .container {
+            display: flex;
+            flex-direction: column;
+
+            @include mq('tablet') {
+                flext-direction: row;
+            }
+        }
+
+        &__title {
+            padding-left: 10px;
+            margin-bottom: 40px;
+            font-size: 58px;
+            font-weight: 800;
+            color: $color-dark-black;
+        }
+
+        &__desc {
+            width: 100%;
+            padding-left: 10px;
+            font-size: 12px;
+            line-height: 2.2;
+            color: $color-black;
+
+            @include mq('tablet') {
+                width: 50%;
+            }
+        }
+
+        &__box {
+            margin-top: 40px;
+
+            display: flex;
+            flex-direction: column;
+
+            @include mq('tablet') {
+                flex-direction: row;
+            }
+        }
+
+        &__item {
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+            position: relative;
+
+            &+.blog__item {
+                margin-top: 30px;
+
+                @include mq('tablet') {
+                    margin-top: 0;
+                }
+            }
+
+            &-hover {
+                background-color: $color-yellow;
+                position: absolute;
+                top: 10;
+                width: 390px;
+                height: 295px;
+                text-transform: uppercase;
+                font-weight: 800;
+                font-size: 30px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                opacity: 0;
+
+                @include mq('tablet') {
+                    width: 369px;
+                    height: 279px;
+                }
+            }
+
+            &:hover &-hover {
+                opacity: 1;
+            }
+
+            img {
+                width: 100%;
+            }
+
+            &-title {
+                padding-left: 10px;
+                margin-top: 25px;
+                font-size: 15px;
+                font-weight: 800;
+            }
+
+            &-content {
+                padding-left: 10px;
+                margin-top: 25px;
+                line-height: 2.2;
+                font-size: 12px;
+                width: 90%;
+            }
+
+            &-date {
+                padding-left: 10px;
+                margin-top: 15px;
+                font-size: 12px;
+            }
+        }
+
+    }
+
+    .contact {
+        margin-top: 120px;
+
+        .container {
+            display: flex;
+            flex-direction: column;
+
+            @include mq('tablet') {}
+        }
+
+        &__title {
+            text-transform: uppercase;
+            font-size: 48px;
+            font-weight: 800;
+            color: $color-dark-black;
+            padding-left: 10px;
+
+            @include mq('tablet') {
+                font-size: 58px;
+                padding-left: 0;
+            }
+        }
+
+        &__desc {
+            width: 100%;
+            font-size: 12px;
+            line-height: 2.2;
+            padding-left: 10px;
+
+            @include mq('tablet') {
+                width: 50%;
+                padding-left: 0;
+            }
+        }
+
+        &__box {
+            margin-top: 30px;
+            display: flex;
+            flex-direction: column;
+
+            @include mq('tablet') {
+                margin-top: 60px;
+                flex-direction: row;
+            }
+        }
+
+        &__form {
+            width: 100%;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-top: 30px;
+
+            @include mq('tablet') {
+                width: 50%;
+            }
+
+            &-title {
+                font-size: 30px;
+                font-weight: 800;
+                color: $color-dark-black;
+            }
+
+            &-box {
+                margin-top: 25px;
+            }
+
+            &-item {
+                width: 100%;
+                margin-top: 10px;
+            }
+
+            &-submit {
+                width: 170px;
+                height: 50px;
+                display: flex;
+                font-size: 12px;
+                text-transform: uppercase;
+                font-weight: 600;
+                margin-top: 15px;
+            }
+        }
+
+        &__right {
+            width: 100%;
+            padding-left: 10px;
+            padding-right: 10px;
+            margin-top: 20px;
+
+            @include mq('tablet') {
+                width: 50%;
+            }
+
+            img {
+                width: 100%;
+            }
+        }
+
+        &__info {
+            margin-top: 60px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            @include mq('tablet') {
+                flex-direction: row;
+            }
+
+            &-item {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-top: 20px;
+
+                @include mq('tablet') {
+                    margin-right: 40px;
+
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                }
+
+                img {
+                    margin-bottom: 5px;
+                    width: 23px;
+                }
+            }
+        }
+
+
+
+        &__address {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+
+            img {
+                margin-bottom: 5px;
+                width: 23px;
+            }
+        }
+
+        &__phone {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+
+            img {
+                margin-bottom: 5px;
+                width: 18px;
+            }
+        }
+
+        &__email {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+
+            img {
+                margin-bottom: 5px;
+                width: 27px;
+            }
+        }
+
+        &__social {
+
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+
+            margin-top: 40px;
+
+            ul {
+                display: flex;
+                flex-direction: row;
+
+
+                li {
+                    margin-right: 30px;
+
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                }
+            }
+
+        }
+
+    }
+}

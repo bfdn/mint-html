@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mint</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1"
+        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <defs>
+            <symbol id="icon-menu" viewBox="0 0 24 24">
+                <path d="M1.5 4.5h21v4.5h-21zM1.5 10.5h21v4.5h-21zM1.5 16.5h21v4.5h-21z"></path>
+            </symbol>
+
+        </defs>
+    </svg>
+
+    <header class="header">
+        <div class="container">
+            <a class="header-logo">
+                <img src="img/logo.png" alt="">
+            </a>
+
+
+            <nav class="header-menu ">
+                <ul class="header-menu__list">
+                    <li class="header-menu__item"><a class="header-menu__link" href="">Work</a></li>
+                    <li class="header-menu__item"><a class="header-menu__link" href="">About</a></li>
+                    <li class="header-menu__item"><a class="header-menu__link" href="">Blog</a></li>
+                    <li class="header-menu__item"><a class="header-menu__link" href="">Contact</a></li>
+                </ul>
+            </nav>
+
+            <button class="header-switch button button-icon" type="button">
+                <svg class="icon icon-menu">
+                    <use xlink:href="#icon-menu"></use>
+                </svg>
+            </button>
+        </div>
+
+    </header>
+
+    <div class="main">
+
+        <section class="start">
+            <div class="container">
+                <div class="start__text">
+                    <div class="start__title">Hello!!! <br>
+                        We Are Creative
+                        Digital Agency.</div>
+                    <p class="start__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                        eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua.</p>
+                    <a href="" class="btn start__link">Send Message</a>
+                </div>
+                <div class="start__img">
+                    <img src="./img/hello.jpg" alt="Hello">
+                </div>
+            </div>
+        </section>
+        <section class="work">
+            <div class="container">
+                <div class="work__section-title">
+                    Work Showcase.
+                </div>
+                <div id="filters" class="work__category-title button-group">
+                    <ul class="work__category-box">
+                        <li class="work__category-box-item work__category-box-item--active"><a href="javascript:void(0)"
+                                class="work__category-link" data-filter="*">All</a></li>
+                        <li class="work__category-box-item"><a href="javascript:void(0)" class="work__category-link"
+                                data-filter=".branding">Branding</a></li>
+                        <li class="work__category-box-item"><a href="javascript:void(0)" class="work__category-link"
+                                data-filter=".illustration">Illustration</a></li>
+                        <li class="work__category-box-item"><a href="javascript:void(0)" class="work__category-link"
+                                data-filter=".web">Web</a></li>
+                    </ul>
+                </div>
+                <div class="work__box">
+                    <div class="work__box-item branding">
+                        <img src="./img/work-box.jpg" alt="">
+                        <div class="work__box-title">Artwork</div>
+                        <div class="work__box-brand">Branding</div>
+                    </div>
+                    <div class="work__box-item work__box-item--big branding">
+                        <img src="./img/work-box-big.jpg" alt="">
+                        <div class="work__box-title">Artwork</div>
+                        <div class="work__box-brand">Branding</div>
+                    </div>
+                    <div class="work__box-item illustration">
+                        <img src="./img/work-box.jpg" alt="">
+                        <div class="work__box-title">Artwork</div>
+                        <div class="work__box-brand">Branding</div>
+                    </div>
+                    <div class="work__box-item work__box-item--big illustration">
+                        <img src="./img/work-box-big.jpg" alt="">
+                        <div class="work__box-title">Artwork</div>
+                        <div class="work__box-brand">Branding</div>
+                    </div>
+                    <div class="work__box-item web">
+                        <img src="./img/work-box.jpg" alt="">
+                        <div class="work__box-title">Artwork</div>
+                        <div class="work__box-brand">Branding</div>
+                    </div>
+                    <div class="work__box-item work__box-item--big web">
+                        <img src="./img/work-box-big.jpg" alt="">
+                        <div class="work__box-title">Artwork</div>
+                        <div class="work__box-brand">Branding</div>
+                    </div>
+
+
+                    <div class="work__box-item web">
+                        <img src="./img/work-box.jpg" alt="">
+                        <div class="work__box-title">Artwork</div>
+                        <div class="work__box-brand">Branding</div>
+                    </div>
+                    <div class="work__box-item work__box-item--big web">
+                        <img src="./img/work-box-big.jpg" alt="">
+                        <div class="work__box-title">Artwork</div>
+                        <div class="work__box-brand">Branding</div>
+                    </div>
+                    <div class="work__box-item illustration">
+                        <img src="./img/work-box.jpg" alt="">
+                        <div class="work__box-title">Artwork</div>
+                        <div class="work__box-brand">Branding</div>
+                    </div>
+                    <div class="work__box-item work__box-item--big illustration">
+                        <img src="./img/work-box-big.jpg" alt="">
+                        <div class="work__box-title">Artwork</div>
+                        <div class="work__box-brand">Branding</div>
+                    </div>
+                    <div class="work__box-item branding">
+                        <img src="./img/work-box.jpg" alt="">
+                        <div class="work__box-title">Artwork</div>
+                        <div class="work__box-brand">Branding</div>
+                    </div>
+                    <div class="work__box-item work__box-item--big branding">
+                        <img src="./img/work-box-big.jpg" alt="">
+                        <div class="work__box-title">Artwork</div>
+                        <div class="work__box-brand">Branding</div>
+                    </div>
+
+                </div>
+
+
+                <a href="" class="work__link btn">Show Me More</a>
+
+            </div>
+        </section>
+        <section class="brand">
+            <div class="container">
+                <img src="./img/brand1.png" alt="">
+                <img src="./img/brand2.png" alt="">
+                <img src="./img/brand3.png" alt="">
+                <img src="./img/brand4.png" alt="">
+                <img src="./img/brand5.png" alt="">
+                <img src="./img/brand6.png" alt="">
+            </div>
+        </section>
+        <section class="about">
+            <div class="container">
+                <div class="about__title">About Us.</div>
+                <div class="about__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt
+                    ut labore et dolore magna aliqua.</div>
+
+                <div class="about__team">
+                    <div class="about__team-item">
+                        <img src="./img/team1.jpg" alt="">
+                        <div class="about__team-info">
+                            <h5>Luke Skywalker</h5>
+                            <span>Web Designer</span>
+                        </div>
+                    </div>
+                    <div class="about__team-item">
+                        <img src="./img/team1.jpg" alt="">
+                        <div class="about__team-info">
+                            <h5>Luke Skywalker</h5>
+                            <span>Web Designer</span>
+                        </div>
+                    </div>
+                    <div class="about__team-item about__team-item--other">
+                        <div class="about__team-item-title">Little About Us</div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temp
+                            orincididunt ut labore et dolore magna aliqua.</p>
+                        <a href="">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="blog">
+            <div class="container">
+                <div class="blog__title">Our Blog.</div>
+                <div class="blog__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt
+                    ut labore et dolore magna aliqua.</div>
+                <div class="blog__box">
+                    <div class="blog__item">
+                        <img src="./img/blog1.jpg" alt="">
+                        <div class="blog__item-hover">Read More</div>
+                        <div class="blog__item-title">SUPER BLOG ARTICLE!</div>
+                        <div class="blog__item-content">Lorem ipsum dolor sit amet, consectetur undo thes tabore et
+                            dolore
+                            magna aliqua.</div>
+                        <div class="blog__item-date">20 May 2020</div>
+                    </div>
+                    <div class="blog__item">
+                        <img src="./img/blog1.jpg" alt="">
+                        <div class="blog__item-hover">Read More</div>
+                        <div class="blog__item-title">SUPER BLOG ARTICLE!</div>
+                        <div class="blog__item-content">Lorem ipsum dolor sit amet, consectetur undo thes tabore et
+                            dolore
+                            magna aliqua.</div>
+                        <div class="blog__item-date">20 May 2020</div>
+                    </div>
+                    <div class="blog__item">
+                        <img src="./img/blog1.jpg" alt="">
+                        <div class="blog__item-hover">Read More</div>
+                        <div class="blog__item-title">SUPER BLOG ARTICLE!</div>
+                        <div class="blog__item-content">Lorem ipsum dolor sit amet, consectetur undo thes tabore et
+                            dolore
+                            magna aliqua.</div>
+                        <div class="blog__item-date">20 May 2020</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contact">
+            <div class="container">
+                <div class="contact__title">Contact Us.</div>
+                <div class="contact__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    tempor incididunt
+                    ut labore et dolore magna aliqua.</div>
+                <div class="contact__box">
+                    <div class="contact__form">
+                        <div class="contact__form-title">Send Us Message.</div>
+                        <form class="contact__form-box">
+                            <div class="contact__form-item">
+                                <input type="text" placeholder="Name">
+                            </div>
+                            <div class="contact__form-item">
+                                <input type="email" placeholder="Email">
+                            </div>
+                            <div class="contact__form-item">
+                                <textarea placeholder="Message"></textarea>
+                            </div>
+                        </form>
+                        <button type="submit" class="contact__form-submit btn">Send Message</button>
+                    </div>
+                    <div class="contact__right">
+                        <img src="./img/contact.jpg" alt="">
+                    </div>
+                </div>
+
+
+                <div class="contact__info">
+                    <div class="contact__info-item">
+                        <img src="./img/address.png" alt="">
+                        1211 Awesome Avenue,
+                        NY USD
+                    </div>
+                    <div class="contact__info-item">
+                        <img src="./img/phone.png" alt="">
+                        +00 123 - 456 -78
+                        <br>
+                        +00 123 - 456 -78
+                    </div>
+                    <div class="contact__info-item">
+                        <img src="./img/email.png" alt="">
+                        mint@mintmail.com
+                    </div>
+                </div>
+                <div class="contact__social">
+                    <ul>
+                        <li><a href=""><i class="fa-brands fa-facebook-f fa-2x"></i></a></li>
+                        <li><a href=""><i class="fa-brands fa-twitter fa-2x"></i></a></li>
+                        <li><a href=""><i class="fa-brands fa-dribbble fa-2x"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__logo">
+                <img src="./img/logo-white.png" alt="">
+                <span>© 2020 - Mint,All Right Reserved</span>
+            </div>
+            <div class="footer__back">
+                <a href="#" id="back-to-top">BACK TO TOP <i class="fa-solid fa-angle-up"></i></a>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/isotope.pkgd.min.js"></script>
+
+    <script>
+        // init Isotope
+        var $work_box = $('.work__box').isotope({
+            itemSelector: '.work__box-item',
+            //layoutMode: 'fitRows',
+
+            layoutMode: 'masonry',
+            masonry: {
+                columnWidth: 370,
+                gutter: 30
+            }
+            /*masonry: {
+                columnWidth: 100,
+                gutter: 10,
+                horizontalOrder: true
+            },*/
+            /*masonryHorizontal: {
+                rowHeight: 70,
+
+
+            }*/
+            /*getSortData: {
+                name: '.name',
+                symbol: '.symbol',
+                number: '.number parseInt',
+                category: '[data-category]',
+                weight: function (itemElem) {
+                    var weight = $(itemElem).find('.weight').text();
+                    return parseFloat(weight.replace(/[\(\)]/g, ''));
+                }
+            }*/
+        });
+
+        // filter functions
+        var filterFns = {
+            // show if number is greater than 50
+            numberGreaterThan50: function () {
+                var number = $(this).find('.number').text();
+                return parseInt(number, 10) > 50;
+            },
+            // show if name ends with -ium
+            ium: function () {
+                var name = $(this).find('.name').text();
+                return name.match(/ium$/);
+            }
+        };
+
+        // bind filter button click
+        $('#filters').on('click', 'a', function () {
+            var filterValue = $(this).attr('data-filter');
+            // use filterFn if matches value
+            filterValue = filterFns[filterValue] || filterValue;
+            $work_box.isotope({ filter: filterValue });
+        });
+
+        // change is-checked class on buttons
+        $('.button-group').each(function (i, buttonGroup) {
+            var $buttonGroup = $(buttonGroup);
+            $buttonGroup.on('click', 'a', function () {
+                $buttonGroup.find('.work__category-box-item--active').removeClass('work__category-box-item--active');
+                $(this).addClass('work__category-box-item--active');
+                //$('.work__box').find('.work__box-item--big').css({ 'margin-top': '0px!important' });
+
+                //$('.Portfolio-wrapper-item-sample').css('margin-left', '30px');
+                // $('.Portfolio-wrapper-item-sample:first-child').css('margin-left','0px');
+            });
+
+
+        });
+
+        // scroll
+        $('#back-to-top').on('click', function (e) {
+            e.preventDefault();
+            $('html, body').animate({ scrollTop: 0 }, '300');
+        });
+    </script>
+
+</body>
+
+</html>
